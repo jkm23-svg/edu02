@@ -17,16 +17,11 @@
     <!-- Header / Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <!-- 로고 이미지 적용 및 글자 결합 -->
-                <div class="flex items-center">
-                    <img src="./image/logo.png" alt="오션중학교 로고" class="h-10 w-auto mr-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <!-- 이미지가 없을 때 표시될 백업 아이콘 (기본 숨김) -->
-                    <div class="hidden math-gradient p-2 rounded-lg text-white mr-3">
-                        <i class="fas fa-calculator text-xl"></i>
-                    </div>
-                    <span class="text-xl font-bold text-gray-800">오션중 수학 교실</span>
-                </div>
+            <div class="flex items-center">
+                <!-- 로고 이미지 적용: 텍스트 제거 후 이미지만 노출 -->
+                <a href="/" class="flex items-center">
+                    <img src="./image/logo.png" alt="오션중 수학 교실 로고" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/120x40/667eea/ffffff?text=OCEAN+MATH';">
+                </a>
             </div>
             <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
                 <a href="#about" class="hover:text-indigo-600 transition">소개</a>
