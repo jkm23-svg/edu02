@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오션중학교 수학 교실</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .math-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header / Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- 로고 이미지 적용 및 글자 결합 -->
+                <div class="flex items-center">
+                    <img src="./image/logo.png" alt="오션중학교 로고" class="h-10 w-auto mr-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <!-- 이미지가 없을 때 표시될 백업 아이콘 (기본 숨김) -->
+                    <div class="hidden math-gradient p-2 rounded-lg text-white mr-3">
+                        <i class="fas fa-calculator text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">오션중 수학 교실</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#about" class="hover:text-indigo-600 transition">소개</a>
+                <a href="#curriculum" class="hover:text-indigo-600 transition">교과 안내</a>
+                <a href="#club" class="hover:text-indigo-600 transition">동아리 활동</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">상담</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="math-gradient text-white py-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">"수학으로 세상을 읽는 법을 배웁니다"</h1>
+            <p class="text-xl opacity-90 mb-8">오션중학교 수학 교사입니다. 논리적 사고의 즐거움을 함께 나눕니다.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#curriculum" class="bg-white text-indigo-700 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">수업 자료 보기</a>
+                <a href="#club" class="border-2 border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-700 transition">동아리 구경하기</a>
+                <!-- 질문하기 버튼 -->
+                <a href="#contact" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg">
+                    <i class="fas fa-question-circle mr-2"></i>질문하기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">교육 철학</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    수학은 단순히 공식에 대입하여 답을 구하는 과목이 아닙니다. 복잡한 문제를 단순화하고, 보이지 않는 규칙을 찾아내는 <strong>창의적 사고의 도구</strong>입니다.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    특히 중학교 1학년 시기는 산술에서 대수로 넘어가는 가장 중요한 관문입니다. 학생들이 '수학의 언어'인 문자와 식에 익숙해질 수 있도록 친절하고 명확한 가이드를 제공합니다.
+                </p>
+                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                    <p class="italic text-indigo-700">"포기하지 않는다면, 모든 수식에는 정답이 숨어 있습니다."</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-80 bg-gray-200 rounded-2xl overflow-hidden shadow-xl flex items-center justify-center">
+                     <i class="fas fa-chalkboard-teacher text-8xl text-gray-400"></i>
+                </div>
+                <div class="absolute -bottom-4 -right-4 bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-sm font-bold text-gray-500">현재 지도 학년</p>
+                    <p class="text-2xl font-bold text-indigo-600">중학교 1학년</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="bg-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">학습 가이드</h2>
+            <p class="text-gray-600 text-lg italic">1학년 1학기의 핵심, 탄탄하게 다집니다.</p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+            <!-- Part 1 -->
+            <div class="p-8 border rounded-2xl hover:shadow-lg transition group">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <span class="text-xl font-bold">1</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">유리수와 사칙계산</h3>
+                <p class="text-gray-600 mb-6">양수와 음수의 개념을 명확히 하고, 정수와 유리수의 덧셈, 뺄셈, 곱셈, 나눗셈을 숙달합니다.</p>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> 절댓값의 이해와 대소 관계</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> 분배법칙과 혼합 계산 정복</li>
+                </ul>
+            </div>
+
+            <!-- Part 2 -->
+            <div class="p-8 border rounded-2xl hover:shadow-lg transition group">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-6 group-hover:bg-purple-600 group-hover:text-white transition">
+                    <span class="text-xl font-bold">2</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">문자와 식 - 일차방정식</h3>
+                <p class="text-gray-600 mb-6">수 대신 문자를 사용하는 대수적 사고의 시작입니다. 등식의 성질을 활용해 방정식의 해를 구합니다.</p>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> 다항식의 표현과 일차식의 계산</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> 실생활 문제를 방정식으로 세워 해결하기</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Section -->
+    <section id="club" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="bg-gray-900 text-white rounded-3xl overflow-hidden flex flex-col md:flex-row">
+            <div class="p-12 md:w-1/2">
+                <span class="bg-indigo-600 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Club Activity</span>
+                <h2 class="text-3xl font-bold mt-4 mb-6 text-white">수학 탐구 동아리</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    교과서를 넘어 실생활 속의 수학적 원리를 찾고 체험합니다. 보드게임, 창의 구조물 제작, 수학 신문 만들기 등 다채로운 활동이 기다리고 있습니다.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="mt-1 mr-4 text-indigo-400"><i class="fas fa-cubes"></i></div>
+                        <div>
+                            <h4 class="font-bold">입체도형 제작</h4>
+                            <p class="text-sm text-gray-500">정다면체와 준정다면체의 비밀 파헤치기</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="mt-1 mr-4 text-indigo-400"><i class="fas fa-brain"></i></div>
+                        <div>
+                            <h4 class="font-bold">전략 보드게임</h4>
+                            <p class="text-sm text-gray-500">확률과 통계를 활용한 승리 전략 분석</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-gray-800 flex items-center justify-center p-10">
+                 <!-- Placeholder for Club Image -->
+                 <div class="text-center">
+                    <i class="fas fa-puzzle-piece text-6xl text-gray-600 mb-4"></i>
+                    <p class="text-gray-500 font-medium italic">"수학으로 노는 즐거움을 경험하세요"</p>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="bg-gray-100 py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-8 text-gray-800">질문이 있거나 상담이 필요한가요?</h2>
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <div class="flex items-center space-x-2 text-gray-600">
+                    <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                    <span>오션중학교 2층 수학실</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600">
+                    <i class="fas fa-envelope text-indigo-600"></i>
+                    <span>teacher@ocean.ms.kr</span>
+                </div>
+            </div>
+            <p class="text-gray-400 text-sm">© 2024 Ocean Middle School Math Department. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
